@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cảnh báo bảo mật</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ffdfdf, #ffffff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background: #fff;
+        padding: 40px 50px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        text-align: center;
+        max-width: 500px;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+        color: #d9534f;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .warning-icon {
+        font-size: 60px;
+        color: #d9534f;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #888;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="warning-icon">⚠️</div>
+        <h1>Bạn đã bị lừa trong bài lab!</h1>
+        <p>Đây chỉ là trang mô phỏng phishing phục vụ cho bài thực hành<br><b>Lab 7.1 – Social Engineering / Email Phishing</b>.</p>
+        <p>Trong thực tế, bạn KHÔNG được click vào các đường link đáng ngờ!</p>
+
+        <div class="footer">
+            Bài lab bởi Lê Nguyễn Trâm Anh – Môn Pentest<br>
+            Mô phỏng an toàn, không chứa mã độc.
+        </div>
+    </div>
+</body>
+</html>
